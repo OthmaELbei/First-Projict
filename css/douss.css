@@ -1,0 +1,364 @@
+:root{
+    --mineColor:#10cab7;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: "work sans",sans-serif;
+}
+.contener{
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width:450PX) {
+    .contener{
+        width: 420px;
+    }
+}
+/* small */
+@media (min-width:768px) {
+    .contener{
+     width: 750PX;
+    }
+    /*midiom*/
+}
+@media (min-width:992px) {
+    .contener{
+     width: 970PX;
+    }
+   /*large*/ 
+}
+@media (min-width:1200px) {
+    .contener{
+     width: 1170PX;
+    }    
+}
+.one-one{
+    color: #ebeceb;
+    text-align: center;
+    font-weight: 800;
+    font-size: 100px;
+    letter-spacing: -3px;
+    margin: 0px;
+    
+}
+.one-one + p {
+    text-align: center;
+    margin-top: -46px;
+}
+@media (max-width=750px) {
+    .one-one{font-size: 60px;
+        
+    }
+    .one-one + p {
+        margin-top: -20px;
+    }
+    
+}
+
+.heder{
+    padding: 20xp;
+}
+.heder .contener{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heder .logo{
+    width: 60px;
+}
+.heder .linke{
+    position: relative;
+}
+.heder .linke .icon span:nth-child(2):hover{
+    width: 100%;
+    transform: 0,5s;
+}
+.heder .linke .icon{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+}
+.heder .linke .icon span{
+    background-color: #333;
+    margin-bottom: 5px;
+    height: 3px;
+}
+.heder .linke .icon span:first-child{
+    width: 100%;
+}
+.heder .linke .icon span:nth-child(2) {
+width: 60%;
+transition: 0,3s;
+}
+.heder .linke .icon span:nth-child(3){
+    width: 100%;
+}
+.heder .linke ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 200px;
+    min-height:200px ;
+    background-color: #c7c5c5;
+    position: absolute;
+    bottom: -102px;
+    top: calc(100% + 10px);
+    display: none;
+    transition: 0,5s;
+    z-index: 1;
+}
+.heder .linke:hover ul{
+    display: block;
+}
+
+.heder .linke ul::after{
+    content: "";
+   
+    border-style: solid;
+    border-width: 10px;
+    border-color:transparent transparent #c5c5c5 transparent ;
+    position: absolute;
+    right: 0px;
+    bottom: 200px;
+}
+.heder .linke ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    color: #333;
+    font-weight: 600;
+    transition: 0,3s;
+}
+.heder .linke ul li:not(:last-child) a{
+    border-bottom: 1px solid #ddd;
+}
+.heder .linke ul li a:hover{
+    padding-left: 35PX;
+}
+.linder{
+    background-image: url(../image/L9XHan4E.jpg);
+    background-size: cover;
+    height: calc(100vh - 80PX);
+    position: relative;
+}
+.linder .frist {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.linder .frist h1{
+    margin: 0px;
+    font-weight:bold;
+    font-size: 50px;
+    color: var(--mineColor);
+    text-align: center;
+}
+.linder .frist P{
+    font-size: 19px;
+    font-weight: 400;
+    text-align: center;
+}
+.feateur{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+}
+.feateur .contener{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;
+   
+}
+.feateur .contener .feat h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 20PX 0;
+
+}
+.feateur .contener .feat P{
+    text-align: center;
+    line-height: 1,8;
+    font-weight: 200px;
+    font-size: 17px;
+    color: #777; 
+    width: 375px;
+    max-width: 100%;
+}
+.feateur .contener .feat .fas{
+    color: var(--mineColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .sbastion-contener .parent-tow {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;
+    margin-top: 100px;
+
+}
+@media (max-width:767PX) {
+
+    
+}
+.sbastion-contener .parent-tow .ikon i {
+    color: var(--mineColor);
+    
+}
+.sbastion-contener .parent-tow .ikon .text .tow{
+    text-align: center;
+    margin-top: -15px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #777;
+
+}
+
+.feateur-too{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+}
+.feateur-too .feateur-too-cont{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;
+    margin-top: 80px;
+}
+.feateur-too .feateur-too-cont .cardd{
+    background-color: white;
+}
+.feateur-too .feateur-too-cont .cardd img{
+    width:100%;
+}
+.feateur-too .feateur-too-cont .cardd .drac{
+    text-align: center;
+    font-size: 20px;
+}
+.feattoo{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+.feattoo-cont{
+    margin-top:80px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.feattoo .feattoo-cont .img {
+    position: relative;
+    width: 250px;
+    height: 375px;
+}
+.feattoo .feattoo-cont .img::before{
+    content:"" ;
+    width: 100px;
+    height:300px ;
+    background-color: #10cab7;
+    position: absolute;
+    top: -40px;
+    left:-30px ;
+    z-index: -1;
+}
+.feattoo .feattoo-cont .img::after{
+content: "";
+width: 120PX;
+height: 200px;
+background-color: white;
+position: absolute;
+border-bottom: 60px solid #777;
+border-left: 60px solid #777;
+z-index: -1;
+top: -65PX;
+left: 182PX;
+}
+.feattoo .feattoo-cont .tex {
+    flex-basis: calc(100% - 450px);
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+.feattoo .feattoo-cont .tex P:first-of-type{
+    font-size: 20px;
+    font-weight: 800;
+    color:#333;
+    line-height: 2;
+}
+.feattoo .feattoo-cont .tex hr{
+    background-color: #10cab7;
+    width: 50%;
+    height: 1px;
+}
+
+.feattoo .feattoo-cont .tex P:last-of-type{
+    font-size: 15px;
+    color: #777;
+    line-height: 2;
+}
+.contact{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+
+}
+.contact  .infor{
+    text-align:center;
+    margin-top: 60px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #333;
+    word-spacing: 0.5;
+}
+.contact  .linkk{
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #10cab7;
+}
+.contact .schule{
+    text-align: center;
+    margin-top: 50px;
+    white-space: 0,1;
+    font-size: 14px;
+    font-weight: 300;
+    color: #777;
+}
+.contact .schule i{
+    margin-left:10px ;
+    color: #333;
+}
+.final{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    background-color: #046d62;
+    font-size: 18px;
+    color: #333;
+    white-space: 2;
+}
+.final span{
+    color: #10cab7;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+
+
+
